@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Conditional Operator if</title>
+        <link href="./css/style.css" rel="stylesheet">
+
+        <style>
+
+        </style>
+        <script src="./js/script.js"></script>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <span class="age"></span>
+
+        <div class="day"></div>
+        
+        <script>
+            let age = 19;
+
+            var girlAge = 15;
+
+            const studyTime = 11;
+
+            let wishTime = 8;
+            const x = "yes you can vote";
+            //syntax
+            /*
+            if(condition){
+                statement
+            }
+            */
+    
+            /*
+            false && false = false
+            true && false = false
+            false && true = false
+            true && true = true
+            */ 
+           if(age >=18){
+                            a =  document.querySelector('span.age')
+                            document.querySelector('span.age').innerHTML = x;
+                            a.style.color = "green";
+                            a.style.fontSize = "4em";
+                            a.style.fontFamily = "Arial";
+                        
+                        }
+
+            if(girlAge>=18){
+                                alert("you can marry");
+                            } else{
+                                     alert('you can\'t marry');
+                                 } 
+            
+            if(studyTime>=8 && studyTime<=10){
+                console.log('you have to study html');
+            }else if(studyTime>10 && studyTime<=12){
+                document.write('<h1>you have to study css</h1>');
+            }
+
+            if(wishTime>=8){
+                document.querySelector('div.day').innerHTML = "Good Day";
+            }
+        </script>
+    </body>
+</html>
